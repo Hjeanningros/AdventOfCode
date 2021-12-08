@@ -8,7 +8,7 @@ std::vector<int> readFile()
     std::vector<int> array;
     std::string line;
     std::ifstream myfile;
-    myfile.open("input.txt");
+    myfile.open("Ex01.txt");
     if (myfile.is_open()) {
         while (getline(myfile,line) ) {
             array.push_back(atoi(line.c_str()));

@@ -9,7 +9,7 @@ std::vector<int> readFile()
     std::vector<int> array;
     std::string line;
     std::ifstream myfile;
-    myfile.open("input2.txt");
+    myfile.open("Ex02.txt");
     if (myfile.is_open()) {
         while (getline(myfile,line) ) {
             array.push_back(atoi(line.c_str()));
@@ -20,7 +20,7 @@ std::vector<int> readFile()
     return array;
 }
 
-int dayO2()
+int dayO1()
 {
     int topSumValue = -1;
     int count = 0;
@@ -49,6 +49,6 @@ int dayO2()
 
 int main()
 {
-    dayO2();
+    dayO1();
     return 1;
 }
